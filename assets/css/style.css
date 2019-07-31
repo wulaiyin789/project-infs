@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet');
+
+body {
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    color: #505962;
+}
+
+/*--- Navigation --*/
+
+.bg-grey {
+    background-color: #4e555b;
+}
+
+.navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background: rgba(0, 0, 0, 0.6) !important
+}
+
+.navbar-brand img{
+    height: 2rem;
+}
+
+.navbar-nav li {
+    padding-right: .7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    padding-top: 0.8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #9fcdff;
+}
+
+/*------------ Slide Page ------------*/
+
+/*--- Fix the Photos --*/
+
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: table;
+    z-index: -1;
+}
+
+.home-package {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.home-inner {
+    position: fixed;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    will-change: transform;
+    background-image: url(../img/event.jpg);
+    opacity: 0.4;
+}
+
+/*--------------------*/
+
+.caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 38%;
+    z-index: 1;
+    color: #9fcdff;
+    text-transform: uppercase;
+}
+
+.caption h1 {
+    font-size: 3.0rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+    padding-bottom: 1rem;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.caption h3 {
+    font-size: 1.5rem;
+    color: #005cbf;
+    text-shadow: .1rem .1rem .2rem black;
+    padding-bottom: 1.6rem;
+}
+
+.btn-lg {
+    border-width: medium;
+    border-radius: 0;
+    padding: .6rem 1.3rem;
+    font-size: 1.1rem;
+}
+
+.bgc1 {
+    background-color: lightseagreen;
+    outline: none;
+}
+
+.bgc2 {
+    background-color: grey;
+}
+
+.pad {
+    margin: 1rem;
+}
+
+/*------------ Search Section ------------*/
+
+.narrow {
+    width: 75%;
+    margin: 1.5rem auto;
+    padding-top: 2rem;
+}
+
+.narrow h1 {
+    font-size: 2.4rem;
+}
+
+/*--- Search Bar --*/
+
+.input-group {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+.btn-search {
+    background: #424242;
+    border-radius: 0;
+    color: #fff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #1c1c1c;
+}
+
+.btn-search:link, .btn-search:visited {
+    color: #fff;
+}
+
+.btn-search:active, .btn-search:hover {
+    background: #1c1c1c;
+    color: #fff;
+}
+
+/*--- Search Box --*/
+
+input {
+    width:400px;
+    font-size: 24px;
+}
+
+#search_box {
+    width: 100%;
+    height: 300px;
+    border: 1px solid grey;
+    display: none;
+}
+
+
+#search_box a {
+    display: block;
+    width: 100%;
+    padding: 1%;
+    font-size: 1.5rem;
+    border-bottom: 1px solid grey;
+    font-family: 'Oxygen', sans-serif;
+    text-decoration: none;
+    color: #565999;
+}
+
+
+
+/*------------ Introduction Section ------------*/
+
+.container-fluid {
+    margin-bottom: 0;
+    padding: 2rem 0 3.5rem;
+    border-radius: 0;
+}
+
+.padding {
+    padding-bottom: 3rem;
+}
+
+.intro {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.intro hr {
+    border-top: 2px solid #B4B4B4;
+    width: 95%;
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.fa-calendar-check, .fa-ticket-alt, .fa-image, .fa-user {
+    font-size: 4em;
+    margin: 1rem;
+}
+
+.feature p {
+    margin: 2rem 2rem 2rem 2rem;
+}
+
+.feature table {
+    margin: 0 auto;
+    width: 60%;
+}
+
+td {
+    padding-top: 2rem;
+}
+
+/*------------ Google Map API Section ------------*/
+
+#gmap {
+    padding-bottom: 5rem;
+}
+
+.size {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 3.5rem;
+}
+
+.size hr {
+    border-top: 2px solid #B4B4B4;
+    width: 95%;
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+#map{
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.size-map {
+    overflow: hidden;
+    padding-bottom: 50%;
+    position: relative;
+    height: 0;
+}
+
+/*------------ Contact(Footer) Section ------------*/
+
+footer {
+    background-color: #3F3F3F;
+    color: #D5D5D5;
+    padding-top: 2rem;
+}
+
+hr.light {
+    border-top: 1px solid #D5D5D5;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: #D5D5D5;
+}
+
+hr.light-100 {
+    border-top: 1px solid #D5D5D5;
+    width: 100%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
+.social a {
+    font-size: 4.5em;
+    padding: 3rem;
+}
+
+.fa-facebook {
+    color: #3B5998;
+}
+
+.fa-twitter {
+    color: #00ACED;
+}
+
+.fa-google-plus-g {
+    color: #DD4B39;
+}
+
+.fa-instagram {
+    color: #517FA4;
+}
+
+.fa-youtube {
+    color: #BB0000;
+}
+
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-google-plus-g:hover,
+.fa-instagram:hover,
+.fa-youtube:hover {
+    color: #0f6674;
+}
+
+.center {
+    padding-top: 3rem;
+    margin: 0 auto;
+}
+
+.container-fluid1 {
+    margin-bottom: 0;
+    padding: 2rem 0 0 0;
+    border-radius: 0;
+}
+
+/*------------ Media Section ------------*/
+
+@media (max-width: 767px) {
+    .caption h1 {
+        font-size: 2.3rem;
+        letter-spacing: .15rem;
+        padding-bottom: .5rem;
+    }
+
+    .caption h3 {
+        font-size: 1.2rem;
+        padding-bottom: 1.2rem;
+    }
+
+    .btn-lg {
+        padding: .5rem 1rem;
+        font-size: 1rem;
+    }
+
+    .narrow h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.dropzone {
+    background: #fff;
+    border: 2px dashed #ddd;
+    border-radius: 5px;
+}
+
+.dropzone img {
+    max-width: 40%;
+    max-height: 40%;
+}
+
+.dz-message {
+    color: #999;
+}
+
+.dz-message:hover {
+    color: #464646;
+}
+
+.dz-message h3 {
+    font-size: 200%;
+    margin-bottom: 15px;
+}
